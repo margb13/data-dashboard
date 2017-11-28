@@ -17,7 +17,8 @@ body{
    padding-left: 50px;
    width: 100%;
 }
-.part1 div, .part4 div{
+/* Estilos para cada parte*/
+.part1 div, .part2 div, .part3 div, .part4 div{
     display: inline-block;
     width: 368px;
     height: 358px;
@@ -26,8 +27,8 @@ body{
     
     margin-left: 30px;
 }
-
-.part1 .box, .part4 .box{
+ /* Estilos para las cajas  donde iran los datos*/
+.part1 .box, .part2 .box, .part3 .box, .part4 .box {
     width: 152px;
     height: 66px;
     border: 1px solid green;
