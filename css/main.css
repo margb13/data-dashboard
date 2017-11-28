@@ -1,5 +1,53 @@
 /*
  * Estilos de tu proyecto
  */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.data{
+   margin-top: 210px;
+   background-color:  #f7f7f7;
+   padding-left: 50px;
+   width: 100%;
+}
+.part1 div, .part4 div{
+    display: inline-block;
+    width: 368px;
+    height: 358px;
+    background-color: #ffffff;
+    margin-top: 65px;
+    
+    margin-left: 30px;
+}
+
+.part1 .box, .part4 .box{
+    width: 152px;
+    height: 66px;
+    border: 1px solid green;
+    margin: 0px;
+    margin-left: 20px;
+}
+.part1 p, .part2 p, .part3 p, .part4 p{
+    padding: 20px;
+}
+
+.part2, .part3{
+    width: 1169px;
+    height: 553px;
+    margin-top: 65px;
+    background-color: #ffffff;
+    margin-left: 30px;
+}
+
+.part4 div{
+    margin-bottom: 65px;
+}
 
 
