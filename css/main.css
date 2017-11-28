@@ -18,36 +18,38 @@ body{
    width: 100%;
 }
 /* Estilos para cada parte*/
-.part1 div, .part2 div, .part3 div, .part4 div{
+.part1 div, .part2 div, .part3 div, .part4 div, .part5 div{
     display: inline-block;
-    width: 368px;
-    height: 358px;
     background-color: #ffffff;
     margin-top: 65px;
-    
-    margin-left: 30px;
+    margin-left: 120px;
+}
+
+.part1 div, .part4 div, .part5 div{
+    width: 550px;
+    height: 500px;
 }
  /* Estilos para las cajas  donde iran los datos*/
-.part1 .box, .part2 .box, .part3 .box, .part4 .box {
+.part1 .box, .part2 .box, .part3 .box, .part4 .box, .part5 .box{
     width: 152px;
     height: 66px;
     border: 1px solid green;
     margin: 0px;
     margin-left: 20px;
 }
-.part1 p, .part2 p, .part3 p, .part4 p{
+.part1 p, .part2 p, .part3 p, .part4 p, .part5 p{
     padding: 20px;
 }
 
 .part2, .part3{
-    width: 1169px;
+    width: 90%;
     height: 553px;
     margin-top: 65px;
     background-color: #ffffff;
-    margin-left: 30px;
+    margin-left: 120px;
 }
 
-.part4 div{
+.part5 div{
     margin-bottom: 65px;
 }
 
