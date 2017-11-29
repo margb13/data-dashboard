@@ -1,183 +1,236 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Data Dashboard</title>
-        <!-- Hojas de estilos -->
-        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Dashboard</title>
+  <!-- Hojas de estilos -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
 <body>
-    <!-- Header -->
-    <header class="bar-nav">
-        <div class="container-title">
-            <div class="div-logo">
-                <a href="http://laboratoria.la/" class="logo">
-                    <img alt="Laboratoria, código que transforma" src="assets/images/logo-laboratoria.svg" class="img-responsive">
-                </a>
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo-laboratoria.png" alt="logo">
+    </div>
+    <div id="menu">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  </header>
+  <main>
+    <nav class="sections-container">
+      <div id="sede" class="uppercase">
+        <h1>Sede</h1>
+        <i id="arrow" class="fa fa-caret-down" aria-hidden="true"></i>
+
+        <!--Modal de las sedes -->
+        <div id="sedes-container" class="hidden">
+          <!-- Lima -->
+          <div class="lima uppercase container">
+            <span class="select"></span>
+            <h2 class="sede-name">lima</h2>
+            <hr>
+          </div>
+          <div class="lima-generation">
+            <div>
+              <div class="select"></div>
+              <span>2015-I</span>
             </div>
-            <div class="div-menu">
-                <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <div>
+              <div class="select"></div>
+              <span>2015-II</span>
             </div>
+            <div>
+              <div class="select"></div>
+              <span>2016-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2016-II</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2017-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2017-II</span>
+            </div>
+          </div>
+
+          <!-- Arequipa -->
+          <div class="arequipa uppercase container">
+            <span class="select"></span>
+            <h2 class="sede-name">arequipa</h2>
+            <hr>
+          </div>
+          <div class="arequipa-generation">
+            <div>
+              <div class="select"></div>
+              <span>2015-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2016-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2016-II</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2017-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2017-II</span>
+            </div>
+          </div>
+
+          <!-- Chile -->
+          <div class="chile uppercase container">
+            <span class="select"></span>
+            <h2 class="sede-name">santiago de chile</h2>
+            <hr>
+          </div>
+          <div class="chile-generation">
+            <div>
+              <div class="select"></div>
+              <span>2015-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2016-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2016-II</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2017-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2017-II</span>
+            </div>
+          </div>
+
+          <!-- México -->
+          <div class="mexico uppercase container">
+            <span class="select"></span>
+            <h2 class="sede-name">ciudad de méxico</h2>
+            <hr>
+          </div>
+          <div class="mexico-generation">
+            <div>
+              <div class="select"></div>
+              <span>2015-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2016-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2016-II</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2017-I</span>
+            </div>
+            <div>
+              <div class="select"></div>
+              <span>2017-II</span>
+            </div>
+          </div>
+
         </div>
-        <!-- Select de sedes y generaciones -->
-        <div class="container-nav">
-            <div class="sedes">
-                <h3> SEDE <i class="fa fa-caret-down" aria-hidden="true"></i></h3>
-                <div class="checkbox">
-                    <!-- Lima -->
-                    <div class="lima">
-                        <input type="checkbox" id="check-lima" value="Lima">
-                        <label><span>LIMA</span></label>
-                        <hr>
-                        <input type="checkbox" id="lima-2015I" value="Lima">
-                        <label><span>2015 - I</span></label>
-                        <input type="checkbox" id="lima-2015II" value="Lima">
-                        <label><span>2015 - II</span></label>
-                        <input type="checkbox" id="lima-2016I" value="Lima">
-                        <label><span>2016 - I</span></label>
-                        <input type="checkbox" id="lima-2016II" value="Lima">
-                        <label><span>2016 - II</span></label>
-                        <input type="checkbox" id="lima-2017I" value="Lima">
-                        <label><span>2017 - I</span></label>
-                        <input type="checkbox" id="lima-2017II" value="Lima">
-                        <label><span>2017 - II</span></label>
-                    </div>
-                    <!-- Arequipa -->
-                    <div class="arequipa">
-                        <input type="checkbox" id="check-arequipa" value="Arequipa">
-                        <label><span>AREQUIPA</span></label>
-                        <hr>
-                        <input type="checkbox" id="arequipa-2015I" value="Arequipa">
-                        <label><span>2015 - I</span></label>
-                        <input type="checkbox" id="arequipa-2016I" value="Arequipa">
-                        <label><span>2016 - I</span></label>
-                        <input type="checkbox" id="arequipa-2016II" value="Arequipa">
-                        <label><span>2016 - II</span></label>
-                        <input type="checkbox" id="arequipa-2017I" value="Arequipa">
-                        <label><span>2017 - I</span></label>
-                        <input type="checkbox" id="arequipa-2017II" value="Arequipa">
-                        <label><span>2017 - II</span></label>
-                    </div>
-                    <!-- Chile -->
-                    <div class="chile">
-                        <input type="checkbox" id="check-chile" value="Chile">
-                        <label><span>SANTIAGO DE CHILE</span></label>
-                        <hr>
-                        <input type="checkbox" id="chile-2015I" value="Chile">
-                        <label><span>2015 - I</span></label>
-                        <input type="checkbox" id="chile-2016I" value="Chile">
-                        <label><span>2016 - I</span></label>
-                        <input type="checkbox" id="chile-2016II" value="Chile">
-                        <label><span>2016 - II</span></label>
-                        <input type="checkbox" id="chile-2017I" value="Chile">
-                        <label><span>2017 - I</span></label>
-                        <input type="checkbox" id="chile-2017II" value="Chile">
-                        <label><span>2017 - II</span></label>
-                    </div>
-                    <!-- Mexico -->
-                    <div class="mexico">
-                        <input type="checkbox" id="check-mexico" value="Mexico">
-                        <label><span>CIUDAD DE MEXICO</span></label>
-                        <hr>
-                        <input type="checkbox" id="mexico-2015I" value="Mexico">
-                        <label><span>2015 - I</span></label>
-                        <input type="checkbox" id="mexico-2016I" value="Mexico">
-                        <label><span>2016 - I</span></label>
-                        <input type="checkbox" id="mexico-2016II" value="Mexico">
-                        <label><span>2016 - II</span></label>
-                        <input type="checkbox" id="mexico-2017I" value="Mexico">
-                        <label><span>2017 - I</span></label>
-                        <input type="checkbox" id="mexico-2017II" value="Mexico">
-                        <label><span>2017 - II</span></label>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div id="sections" class="uppercase">
+        <span>
+          <a href="#">dashboard</a>
+        </span>
+        <span>
+          <a href="#students" id="students">students</a>
+        </span>
+        <span>
+          <a href="#teachers-ratings" id="teachers" name="teachers">teachers</a>
+        </span>
+      </div>
+    </nav>
+    <!--Sección de la data de los teachers-->
+    <section id="teachers-ratings">
+
+    </section>
+
+    <!--sección del perfil del usuario-->
+    <section id="user" class="user">
+      <div class="user-name">
+        <img src="assets/images/user.jpg" alt="Alejandra Ramirez">
+        <div class="name">
+          <h3 class="name">Alejandra Ramirez</h3>
+          <h4>Training Manager</h4>
         </div>
-        <div id="sections" class="option-menu">
-            <span><a href="#">OVERVIEW</a> </span>
-            <span><a href="#students">STUDENTS</a></span>
-            <span><a href="#">TEACHERS</a></span>
+      </div>
+      <div class="home">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <h4>Home</h4>
+      </div>
+      <div class="tables">
+        <i class="fa fa-table" aria-hidden="true"></i>
+        <h4>Tables</h4>
+      </div>
+      <div class="calendar">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <h4>Calendar</h4>
+      </div>
+      <div class="out">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        <h4>Sign out</h4>
+      </div>
+    </section>
+    <!--sección students-->
+    <section id="section-students" class="students-data">
+      <form id="search">
+        <input type="search" name="" id="search-input" placeholder="Buscar">
+      </form>
+      <!--<div id="profile" class="container-data">
+        <div id="photo" class="photo-profile">
+          <img src="assets/" alt="Ale">
         </div>
-    </header>
-    <main>
-        <section id="students" class="section">
-            <div class="column">
-                <h3> SPECIALIZATION</h3>
-                <!-- Specialization -->
-                <div class="specialization">
-                    <input type="checkbox" id="js" value="Javascript">
-                    <label><span>Javascript</span></label>
-                    <input type="checkbox" id="ux" value="UX Design">
-                    <label><span>UX Design</span></label>
-                    <input type="checkbox" id="front" value="Front end Designer">
-                    <label><span>Front end Designer</span></label>
-                </div>
-            </div>
-            <div class="column">
-                <div class="div-search" id="input-search">
-                    <div id="search-icon">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
-                    <input class="search" autocomplete="off" type="url" >
-                </div>
-                <div class="div-rows">
-                    <div class="cards tab-details">
-                        <a href="#">
-                            <div class="profile-students">
-                                <div class="col-1">
-                                    <img src="#" alt="Andrea Miranda" class="img">
-                                    <span>bandera</span>
-                                </div>
-                                <div class="col-2">
-                                    <h5 class="name">Diana Navarro</h5>
-                                    <p class="curse">Frontend Developer</p>
-                                    <div class="skills">
-                                        <div class="skill">JAVASCRIPT</div>
-                                        <div class="skill">APIs</div>
-                                        <div class="skill">JQUERY</div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                   <div class="skills-2">
-                                        <div class="skill2">
-                                            <h6>95.6%</h6>
-                                            <p>TECH SKILLS</p>
-                                        </div>
-                                       <div class="skill2">
-                                           <h6>95.6%</h6>
-                                           <p>LIFE SKILLS</p>
-                                       </div>
-                                       <div class="skill2">
-                                           <h6>INTERM</h6>
-                                           <p>ENGLISH SKILLS</p>
-                                       </div>
-                                    </div>
-                                    <div class="more">
-                                        <p> Ver perfil <i class="fa fa-caret-right" aria-hidden="true"></i></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <input class="search" autocomplete="off" type="url" >
-                </div>
-            </div>
-        </section>
-        <section>
-
-        </section>
-
-    </main>
-
-
-    <!-- Base de datos -->
-    <script src="./js/data.js"></script>
-    <!-- Aquí va tus archivos JS -->
-    <script src="./js/app.js"></script>
+        <div id="info" class="info-profile">
+          <div id="name" class="name-profile">
+            <p>MARGARITA SUTTA JUAREZ</p>
+          </div>
+          <div id="status" class="status-profile">
+            <p>Activo</p>
+          </div>
+        </div>
+        <div class="skills-profile">
+          <div class="skill">
+            <p>95.6 %</p>
+            <p class="skill-text">tech skills</p>
+          </div>
+          <div class="skill">
+            <p>95.6 %</p>
+            <p class="skill-text">tech skills</p>
+          </div>
+          <div class="button">
+            <button type="submit" class="remove">Remove</button>
+          </div>
+        </div>
+      </div>-->
+    </section>
+  </main>
+  <!-- Base de datos -->
+  <script src="./js/data.js"></script>
+  <!-- Aquí va tus archivos JS -->
+  <script src="./js/app.js"></script>
 </body>
+
 </html>
