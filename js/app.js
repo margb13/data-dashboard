@@ -73,11 +73,16 @@ window.addEventListener('load', function (event) {
     divButton.classList.add('button');
     buttonRemove.classList.add('remove');
   });
-  arrow.addEventListener('click', function showSedes(event) {
+  
+  select.addEventListener('click', function showSedes(event) {
     var select = document.getElementById('select');
     // Agregar funcion para mostrar la data al select
     select.addEventListener('change', function (event) {
-      if (select.value === 'original') {
+      if (select.value === 'Lima-2016-1') {
+        alert('hola');
+
+
+
       }  
     }); 
   });
@@ -110,16 +115,6 @@ window.addEventListener('load', function (event) {
     titleJedi.classList.add('average-title');
   });
 
-  teachers.addEventListener('click', function averageTeachers(event) {
-    // Promedio general Arequipa
-    // var containerAverageAqp = document.createElement('div');
-    var aqp = data.AQP;
-    var average2016Aqp = function (data) {
-      for (var i in aqp) {
-        return console.log(aqp);
-      }
-    }
-  });
 
 });
 
