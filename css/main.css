@@ -7,47 +7,63 @@
     box-sizing: border-box;
 }
 body{
+    overflow: auto;
+}
+/*Estilos para la seccion data*/
+.data{
+    
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    margin-top: 210px;
+    background-color:  #f7f7f7;
+    /*padding-left: 50px;*/
+    width: 80%;
+    float: right;
 }
-
-.data{
-   margin-top: 210px;
-   background-color:  #f7f7f7;
-   padding-left: 50px;
-   width: 100%;
-}
-/* Estilos para cada parte*/
-.part1 div, .part2 div, .part3 div, .part4 div, .part5 div{
+/* Estilos para part 1, 4 y 5*/
+.part1 div, .part4 div, .part5 div{
     display: inline-block;
     background-color: #ffffff;
     margin-top: 65px;
-    margin-left: 120px;
+    margin-left: 60px;
 }
-
-.part1 div, .part4 div, .part5 div{
-    width: 550px;
-    height: 500px;
-}
- /* Estilos para las cajas  donde iran los datos*/
-.part1 .box, .part2 .box, .part3 .box, .part4 .box, .part5 .box{
-    width: 152px;
-    height: 66px;
-    border: 1px solid green;
-    margin: 0px;
-    margin-left: 20px;
-}
-.part1 p, .part2 p, .part3 p, .part4 p, .part5 p{
-    padding: 20px;
-}
-
 .part2, .part3{
     width: 90%;
     height: 553px;
     margin-top: 65px;
     background-color: #ffffff;
-    margin-left: 120px;
+    margin-left: 60px;
 }
+
+
+.part1 div, .part4 div, .part5 div{
+    width: 42%;
+    height: 400px;
+}
+ /* Estilos para los box  donde iran los datos*/
+.part1 .box, .part2 .box, .part3 .box, .part4 .box, .part5 .box{
+    width: 80px;
+    height: 60px;
+    border: 1px solid green;
+    margin: 0px;
+    margin-left: 20px;
+    display: inline-block;
+    
+}
+
+
+.part1 p, .part2 p, .part3 p, .part4 p, .part5 p{
+    padding: 20px;
+}
+
+.a p, .selection{
+    display: inline-block;
+}
+.b p, .selection{
+    display: inline-block;
+}
+
+
 
 .part5 div{
     margin-bottom: 65px;
