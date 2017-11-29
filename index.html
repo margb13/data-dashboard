@@ -1,194 +1,283 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="assets/images/logo-laboratoria.png" alt="logo">
-      </div>
-      <div id="menu">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
-    </header>
-    <main>
-      <nav class="sections-container">
-        <div id="sede" class="uppercase">
-          <h1>Sede</h1>
-          <i id= "arrow" class="fa fa-caret-down" aria-hidden="true"></i>
 
-          <!--Modal de las sedes -->
-          <div id="sedes-container" class="hidden">
-            <!-- Lima -->
-              <div class="lima uppercase container">
-                <span class="select"></span>
-                <h2 class="sede-name">lima</h2>
-                <hr>
-              </div>
-              <div class="lima-generation">
-                <div>
-                  <div class="select"></div>
-                  <span>2015-I</span>
-                </div>
-                <div>
-                  <div class="select"></div>
-                  <span>2015-II</span>
-                </div>
-                <div>
-                  <div class="select"></div>
-                  <span>2016-I</span>
-                </div>
-                <div>
-                  <div class="select"></div>
-                  <span>2016-II</span>
-                </div>
-                <div>
-                  <div class="select"></div>
-                  <span>2017-I</span>
-                </div>
-                <div>
-                  <div class="select"></div>
-                  <span>2017-II</span>
-                </div>
-              </div>
+<head>
+  <meta charset="utf-8">
+  <title>Data Dashboard</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-              <!-- Arequipa -->
-              <div class="arequipa uppercase container">
-                  <span class="select"></span>
-                  <h2 class="sede-name">arequipa</h2>
-                  <hr>
-                </div>
-                <div class="arequipa-generation">
-                  <div>
-                    <div class="select"></div>
-                    <span>2015-I</span>
-                  </div>
-                  <div>
-                    <div class="select"></div>
-                    <span>2016-I</span>
-                  </div>
-                  <div>
-                    <div class="select"></div>
-                    <span>2016-II</span>
-                  </div>
-                  <div>
-                    <div class="select"></div>
-                    <span>2017-I</span>
-                  </div>
-                  <div>
-                    <div class="select"></div>
-                    <span>2017-II</span>
-                  </div>
-                </div>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo-laboratoria.png" alt="logo">
+    </div>
+    <div id="menu">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  </header>
+  <main>
+    <nav class="sections-container">
+      <div id="sede" class="uppercase">
+        <h1>Sede</h1>
+        <i id="arrow" class="fa fa-caret-down" aria-hidden="true"></i>
+        <!--seccion cuadros estadisticos-->
 
-                <!-- Chile -->
-                <div class="chile uppercase container">
-                    <span class="select"></span>
-                    <h2 class="sede-name">santiago de chile</h2>
-                    <hr>
-                  </div>
-                  <div class="chile-generation">
-                    <div>
-                      <div class="select"></div>
-                      <span>2015-I</span>
-                    </div>
-                    <div>
-                      <div class="select"></div>
-                      <span>2016-I</span>
-                    </div>
-                    <div>
-                      <div class="select"></div>
-                      <span>2016-II</span>
-                    </div>
-                    <div>
-                      <div class="select"></div>
-                      <span>2017-I</span>
-                    </div>
-                    <div>
-                      <div class="select"></div>
-                      <span>2017-II</span>
-                    </div>
-                  </div>
-
-                  <!-- México -->
-                  <div class="mexico uppercase container">
-                      <span class="select"></span>
-                      <h2 class="sede-name">ciudad de méxico</h2>
-                      <hr>
-                    </div>
-                    <div class="mexico-generation">
-                      <div>
-                        <div class="select"></div>
-                        <span>2015-I</span>
-                      </div>
-                      <div>
-                        <div class="select"></div>
-                        <span>2016-I</span>
-                      </div>
-                      <div>
-                        <div class="select"></div>
-                        <span>2016-II</span>
-                      </div>
-                      <div>
-                        <div class="select"></div>
-                        <span>2017-I</span>
-                      </div>
-                      <div>
-                        <div class="select"></div>
-                        <span>2017-II</span>
-                      </div>
-                    </div>
-
+      <!--Modal de las sedes -->
+      <div id="sedes-container" class="hidden">
+        <!-- Lima -->
+        <div class="lima uppercase container">
+          <span class="select"></span>
+          <h2 class="sede-name">lima</h2>
+          <hr>
+        </div>
+        <div class="lima-generation">
+          <div>
+            <div class="select"></div>
+            <span>2015-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2015-II</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2016-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2016-II</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2017-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2017-II</span>
           </div>
         </div>
-        <div id="sections" class="uppercase">
-          <span> <a href="#">dashboard</a> </span>
-          <span><a href="#">students</a></span>
-          <span><a href="#" id="teachers" name = "teachers">teachers</a></span>
-        </div>
-      </nav>
-      <!--Secci+on de la data de los teachers-->
-      <section id="teachers-ratings">
 
-      </section>
-
-      <!--sección del perfil del usuario-->
-      <section id="user" class="user">
-        <div class="user-name">
-          <img src="assets/images/user.jpg" alt="Alejandra Ramirez">
-          <div class="name">
-            <h3 class="name">Alejandra Ramirez</h3>
-            <h4>Training Manager</h4>
-          </div> 
+        <!-- Arequipa -->
+        <div class="arequipa uppercase container">
+          <span class="select"></span>
+          <h2 class="sede-name">arequipa</h2>
+          <hr>
         </div>
-        <div class="home">
-          <i class="fa fa-home" aria-hidden="true"></i>
-          <h4>Home</h4>
-        </div>
-        <div class="tables">
-          <i class="fa fa-table" aria-hidden="true"></i>
-          <h4>Tables</h4>
-        </div>
-        <div class="calendar">
-          <i class="fa fa-calendar" aria-hidden="true"></i>
-          <h4>Calendar</h4>
-        </div>
-        <div class="out">
-          <i class="fa fa-sign-out" aria-hidden="true"></i>
-          <h4>Sign out</h4>
+        <div class="arequipa-generation">
+          <div>
+            <div class="select"></div>
+            <span>2015-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2016-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2016-II</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2017-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2017-II</span>
+          </div>
         </div>
 
-      </section>
+        <!-- Chile -->
+        <div class="chile uppercase container">
+          <span class="select"></span>
+          <h2 class="sede-name">santiago de chile</h2>
+          <hr>
+        </div>
+        <div class="chile-generation">
+          <div>
+            <div class="select"></div>
+            <span>2015-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2016-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2016-II</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2017-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2017-II</span>
+          </div>
+        </div>
 
-    
-    </main>
-		<!-- Base de datos -->
-		<script src="./js/data.js"></script>
-		<!-- Aquí va tus archivos JS -->
-    <script src="./js/app.js"></script>
-  </body>
+        <!-- México -->
+        <div class="mexico uppercase container">
+          <span class="select"></span>
+          <h2 class="sede-name">ciudad de méxico</h2>
+          <hr>
+        </div>
+        <div class="mexico-generation">
+          <div>
+            <div class="select"></div>
+            <span>2015-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2016-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2016-II</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2017-I</span>
+          </div>
+          <div>
+            <div class="select"></div>
+            <span>2017-II</span>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <div id="sections" class="uppercase">
+        <span>
+          <a href="#">dashboard</a>
+        </span>
+        <span>
+          <a href="#">students</a>
+        </span>
+        <span>
+          <a href="#" id="teachers" name="teachers">teachers</a>
+        </span>
+      </div>
+    </nav>
+    <!--Secci+on de la data de los teachers-->
+    <section id="teachers-ratings">
+
+    </section>
+
+    <!--sección del perfil del usuario-->
+    <section id="user" class="user">
+      <div class="user-name">
+        <img src="assets/images/user.jpg" alt="Alejandra Ramirez">
+        <div class="name">
+          <h3 class="name">Alejandra Ramirez</h3>
+          <h4>Training Manager</h4>
+        </div>
+      </div>
+      <div class="home">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <h4>Home</h4>
+      </div>
+      <div class="tables">
+        <i class="fa fa-table" aria-hidden="true"></i>
+        <h4>Tables</h4>
+      </div>
+      <div class="calendar">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <h4>Calendar</h4>
+      </div>
+      <div class="out">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        <h4>Sign out</h4>
+      </div>
+
+    </section>
+
+
+  </main>
+  <!-- Base de datos -->
+  <section class="data">
+    <div class="part1">
+      <div>
+        <p>ENROLLMENT</p>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      
+      <div>
+        <P>ACHIEVEMENT</P>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <!--<div>
+     <P>NET PROMOTER SCORE</P>
+     <div class = "box"></div>
+     <div class = "box"></div>
+  </div>-->
+    </div>
+
+    <div class="part2">
+      <div class="a">
+        <p>TECH SKILLS</p>
+        <!-- Seleccionar sprint-->
+        <select class="selection" name="" id="selection">
+          <option value="Sprint 1">Sprint-1</option>
+          <option value="Sprint 2">Sprint-2</option>
+          <option value="Sprint 3">Sprint-3</option>
+          <option value="Sprint 4">Sprint-4</option>
+        </select>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="part3">
+      <div class="b">
+        <p>LIFE SKILLS</p>
+        <!-- Seleccionar sprint-->
+        <select class="selection" name="" id="selection">
+          <option value="Sprint 1">Sprint-1</option>
+          <option value="Sprint 2">Sprint-2</option>
+          <option value="Sprint 3">Sprint-3</option>
+          <option value="Sprint 4">Sprint-4</option>
+        </select>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="part4">
+      <div>
+        <p>STUDENT SATISFACTION</p>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div>
+        <p>NET PROMOTER SCORE</p>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="part5">
+      <div>
+        <p>TEACHER RATING</p>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div>
+        <p>JEDI MASTER RATING</p>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+
+    </div>
+
+</div>
+</section>
+  <script src="./js/data.js"></script>
+  <!-- Aquí va tus archivos JS -->
+  <script src="./js/app.js"></script>
+</body>
+
 </html>
