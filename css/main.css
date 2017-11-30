@@ -232,6 +232,12 @@ div.home:hover, div.tables:hover, div.calendar:hover, div.out:hover {
     display: inline-block;
     
 }
+/*estilos de los datos*/
+.box .total-students, .box .desercion{
+    width: 42px;
+    height: 32px;
+    margin: 0px;
+}
 
 
 .part1 p, .part2 p, .part3 p, .part4 p, .part5 p{

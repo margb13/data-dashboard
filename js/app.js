@@ -16,11 +16,12 @@ var chile = data.SCL;
 console.log(data);
 
 window.addEventListener('load', function(event) {
-var sede = document.getElementById('sede');
-var semestre = document.getElementById('semestre');
+  var sede = document.getElementById('sede');
+  var semestre = document.getElementById('semestre');
 
   
   sede.addEventListener('change', jalarData);
+  document.addEventListener('change',inscritas );
   /* funcion para sacar data  de acuerdo a la sede y semestre que se elige*/ 
   function jalarData(event) {
     for (var i = 0; i < Object.keys(data).length; i++) {
@@ -36,6 +37,24 @@ var semestre = document.getElementById('semestre');
           semestre.appendChild(optionSemestre);
         }
       }
+    }
+  }
+/* Funcion para jalar data de alumnas inscritas y desercion por sede   */
+  function inscritas(event) {
+    if (event.target === sede || event.target === semestre) {
+      var alumnas = data[sede.value][semestre.value].students;
+      var alumnasInscritas = 0;
+      var alumnasDesercion = 0;
+
+      for (var i = 0; i < alumnas.length; i++) {
+        if (alumnas[i]['active'] === true) {
+          alumnasInscritas++;
+        } else {
+          alumnasDesercion++;
+        }
+      }
+      document.getElementById('total-students').textContent = alumnasInscritas;
+      document.getElementById('desercion').textContent = Math.round((alumnasDesercion / alumnas.length) * 100) * 10 / 10 + '%';
     }
   }
 
