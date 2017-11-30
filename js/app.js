@@ -16,6 +16,30 @@ var chile = data.SCL;
 console.log(data);
 
 window.addEventListener('load', function(event) {
+var sede = document.getElementById('sede');
+var semestre = document.getElementById('semestre');
+
+  
+  sede.addEventListener('change', jalarData);
+  /* funcion para sacar data  de acuerdo a la sede y semestre que se elige*/ 
+  function jalarData(event) {
+    for (var i = 0; i < Object.keys(data).length; i++) {
+      if (event.target.value === Object.keys(data)[i]) {
+        semestre.innerHTML = '';
+        /* Metodo reverse para que salga el ultimo semestre primero*/ 
+        var todosSemestres = Object.keys(data[sede.value]).reverse();
+        console.log(todosSemestres);
+        for (var j = 0; j < todosSemestres.length; j++) {
+          var optionSemestre = document.createElement('option');
+          optionSemestre.value = todosSemestres[j];
+          optionSemestre.textContent = todosSemestres[j];
+          semestre.appendChild(optionSemestre);
+        }
+      }
+    }
+  }
+
+
   var students = document.getElementById('students');
   students.addEventListener('click', function(event) {
     var sectionEstudents = document.getElementById('section-students');
