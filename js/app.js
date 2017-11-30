@@ -57,6 +57,48 @@ window.addEventListener('load', function(event) {
       document.getElementById('desercion').textContent = Math.round((alumnasDesercion / alumnas.length) * 100) * 10 / 10 + '%';
     }
   }
+  
+  /* Funcion para sacar el rendimiento,  numero y porcentaje   segun su hse y tech */
+  function hscTech(event) {
+    if (event.target === sede || event.target === semestre) {
+      var alumnas = data[sede.value][semestre.value].students;
+      var sprints = data[sede.value][semestre.value].ratings.length;
+      var alumnasInscritas = 0;
+      var superaAlumnas = 0;
+      for (var i = 0; i < alumnas.length; i++) {
+        if (alumnas[i]['active'] === true) {
+
+          alumnasInscritas++;
+          var sumHsc = 0;
+          var sumTech = 0;
+          var superaTech = 0;
+          var superaHse = 0;
+      for(var j = 0; j < sprints; j++){
+         sumTech = sumTech + alumnas[i].sprints[j].score.tech;
+         if(alumnas[i].sprints[j].score.tech > 1260){
+           superaTech++;
+         }
+         sumHse = sumHsc + alumnas[i].sprints[j].score.hse;
+         if(alumnas[i].sprints[j].score.hse > 840){
+           superaHse++;
+         }
+       }
+       var tech1 = Math.floor(sumTech / sprints);
+       var hse1 = Math.floor (sumHsc / sprints);
+       if( tech1 > 1260 && hse1 > 840){
+         superaAlumnas++;
+       }
+        }
+      }
+      var tech2 = superaTech / sprints;
+      var hsc2 = superaHse / sprints;
+      document.getElementById('supera').textContent = superaAlumnas;
+      document.getElementById('porcentaje').textContent = Math.round((superaAlumnas / alumnasInscritas) * 100) * 10 / 10 + '%';
+     
+    }
+
+  }
+  }
 
 
   var students = document.getElementById('students');
