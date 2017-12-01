@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-
  }
 
 .body {
@@ -40,32 +39,32 @@
      margin-left: 150px;
  }
 
- /*Estilo a sections-container */
+ /*Estilo a etiqueta select */
 
+ select {
+    margin-left: 330px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+    outline: none;
+ }
+
+/*Estilo a section-container */
  .sections-container {
      width: 80%;
      float: right;
      background-color: #d4d4d4;
      font-family: sans-serif;
+     height: 100px;
  }
 
- #sede {
-     margin-bottom: 20px;
- }
-
- #sede h1 {
-    margin-right: 20px; 
-    padding-top: 20px;
-    padding-left: 60px;
-    display: inline-block;
- }
-
- #sede i {
-     font-size: 30px;
- }
 
  div#sections span {
     display: inline-block; 
+    line-height: 100px;
     padding-left: 50px;
     padding-bottom: 20px;
     font-weight: bold;
@@ -91,46 +90,6 @@
     margin-left: 170px;
  }
 
- /*Estilo del modal de sedes*/
- #sedes-container {
-    position: fixed; 
-    z-index: 100;
-    width: 550px; 
-    height: 450px; 
-    top: 0; 
-    left: 150px; 
-    font-family: sans-serif; 
-    font-size: 12px; 
-    font-weight: normal; 
-    border: none; 
-    background-color: #fff; 
-    color: #a1a0a0;
-    overflow: scroll;
- }
-
- .select {
-     margin: 10px 20px 0;
-     display: inline-block;
-     width: 15px;
-     height: 15px;
-     border: 1px solid orange;
- }
-
- .sede-name {
-     margin-top: 5px;
-     display: inline-block;
- }
-
- hr {
-     background: orange;
-     width: 70%;
-     margin-top: 10px;
-     margin-left: 20px;
- }
-
- .container {
-     margin-top: 20px;
- }
 
 /*Estilo del usuario */
 section.user {
@@ -191,7 +150,7 @@ section.user i {
 }
 
 div.home:hover, div.tables:hover, div.calendar:hover, div.out:hover {
-    background-color: #f8d467; 
+    background-color: #ffc107; 
     color: #fff;
 }
 
@@ -220,7 +179,64 @@ div.home:hover, div.tables:hover, div.calendar:hover, div.out:hover {
      padding-top: 15px;
  }
 
+/*Estilos para la seccion data*/
+.data{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    /*margin-top: 210px;*/
+    background-color:  #f7f7f7;
+    /*padding-left: 50px;*/
+    width: 80%;
+    float: right;
+}
+/* Estilos para part 1, 4 y 5*/
+.part1 div, .part4 div, .part5 div{
+    display: inline-block;
+    background-color: #ffffff;
+    margin-top: 65px;
+    margin-left: 60px;
+}
+.part2, .part3{
+    width: 90%;
+    height: 553px;
+    margin-top: 65px;
+    background-color: #ffffff;
+    margin-left: 60px;
+}
+
+
+.part1 div, .part4 div, .part5 div{
+    width: 42%;
+    height: 400px;
+}
+ /* Estilos para los box  donde iran los datos*/
+.part1 .box, .part2 .box, .part3 .box, .part4 .box, .part5 .box{
+    width: 80px;
+    height: 60px;
+    border: 1px solid green;
+    margin: 0px;
+    margin-left: 20px;
+    display: inline-block;
+    
+}
+
+
+.part1 p, .part2 p, .part3 p, .part4 p, .part5 p{
+    padding: 20px;
+}
+
+.a p, .selection{
+    display: inline-block;
+}
+.b p, .selection{
+    display: inline-block;
+}
+
+.part5 div{
+    margin-bottom: 65px;
   /*Estilo de la sección students */
+}
 
 .students-data {
     float: right;
@@ -344,5 +360,10 @@ div.home:hover, div.tables:hover, div.calendar:hover, div.out:hover {
     background-color: black;
     color: white;
 }
+
+.display-none {
+    display: none;
+}
+
 
 
